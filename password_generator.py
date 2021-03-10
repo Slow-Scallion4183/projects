@@ -3,10 +3,11 @@ import urllib.request
 import string
 
 class password:
-	def __init__(self, length, string_method, numbers, special_chars):
+	def __init__(self, length, string_method='both', numbers=True, special_chars):
 		self.length = length
 		self.string_method = string_method
 		self.numbers = numbers
+		self.special_chars = special_chars
 
 	# def generate_intricate(self, iterations):
 	# 	characters = string.ascii_letters + string.digits + string.punctuation
@@ -23,11 +24,6 @@ class password:
 			for c in range(self.length):
 				output_password += random.choice(characters)
 			print(output_password)
-
-
-
-
-
 # Test
 
 password1 = password(20) # password length = 20
