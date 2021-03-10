@@ -47,5 +47,5 @@ class complexpass(simplepass):
 var1 = complexpass(20, 'both', False, False) # password length = 20, string method is lowercase, numbers are true and special characters are false
 var1.generate(3) # generate the random password 3 times
 
-var2 = simplepass(20, 'abcdefghijklmnopqrstuvwxyz0123467589') # password length = 20, string method is lowercase, numbers are true and special characters are false
+var2 = simplepass(20, 'abcdefghijklmnopqrstuvwxyz0123467589') # password length = 20, characters provided by user.
 var2.generate(3) # generate the random password 3 times
